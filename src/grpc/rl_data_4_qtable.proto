@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package rl_data_4_qtable;
+
+/////////////////////////////////////////////////////////////////////////
+/// Comunicación gRPC para el envio de datos entre el LM y el agente. ///
+/////////////////////////////////////////////////////////////////////////
+service RlData4QTable {
+  rpc PushObservation (ObservationRequest) returns (ActionResponse);
+}
+
+/////////////////////////////////////////
+/// Mensaje que envía el LM -> agente ///
+/////////////////////////////////////////
+message ObservationRequest {
+  uint64 tti_phy       = 1; 
+  uint64 tti_counter   = 2; 
+  repeated UeTTI  ues  = 3;
+}
+
+/////////////////////////////////////////
+/// Respuesta del servidor -> LM      ///
+/////////////////////////////////////////
+message ActionResponse {
+  repeated UeShare ue_shares = 1;
+  uint32 action_id = 2;
+}
+
+message UeShare {
+  uint32 rnti  = 1;
+  double share = 2; 
+}
+
+message UeTTI {
+  uint32 rnti = 1;
+  uint64 txdrop= 2;
+  uint64 txbuffer = 3; //
+  uint64 txpdu = 4; //
+}

@@ -1,0 +1,86 @@
+***********************************
+***	 INICIAR SERVIDOR QLEARN	***
+***********************************
+
+En una nueva terminal
+
+-- cd ORAN-NS3 
+
+Encender en entorno virtual
+
+--source .venv/bin/activate
+
+Ir a la carpeta RL
+--cd src/rl
+
+Encender servidor 
+
+--python3 rl_qlearn.py
+
+***********************************
+***	  INICIAR ENTORNO QLEARN    ***
+***********************************
+En una nueva termianl
+-- cd ORAN-NS3 
+
+Configurar ejemplos
+-- ./ns3 configure --enable-examples
+
+Compilar
+-- ./ns3 build
+
+Ejecutar el escenario QLEARN
+
+-- ./ns3 run oran-nr-example-rl-qlearn
+
+***********************************
+***	   INICIAR SERVIDOR DQN     ***
+***********************************
+
+En una nueva terminal
+
+-- cd ORAN-NS3 
+
+Encender en entorno virtual
+
+--source .venv/bin/activate
+
+Ir a la carpeta RL
+--cd src/rl
+
+Encender servidor 
+
+--python3 rl_dqn.py
+
+***********************************
+***	    INICIAR ENTORNO DQN	    ***
+***********************************
+En una nueva termianl
+-- cd ORAN-NS3 
+
+Configurar ejemplos
+-- ./ns3 configure --enable-examples
+
+Compilar
+-- ./ns3 build
+
+Ejecutar el escenario DQN
+
+-- ./ns3 run oran-nr-example-rl-dqn
+
+***********************************
+***  	  ENTORNO VIRTUAL	    ***
+***********************************
+
+Crear entorno virtual
+
+-- python3 -m venv .venv
+
+Activar entorno virtual
+
+-- source .venv/bin/activate
+
+Instalar requirements
+
+pip install -r requirements.txt
+
