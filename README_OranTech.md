@@ -1,7 +1,7 @@
 # ORAN-NS3 con integración de aprendizaje por refuerzo
 ## Modificaciones principales
 
-Este repositorio extiende ORAN-NS3 con soporte para ejecutar escenarios de aprendizaje por refuerzo aplicados a la asignación de recursos en la RAN. Para ello, se incorporó unaa integración entre ns-3 y agentes externos desarrollados en Python, utilizando gRPC como mecanismo de comunicación.
+Este repositorio extiende ORAN-NS3 con soporte para ejecutar escenarios de aprendizaje por refuerzo aplicados a la asignación de recursos en la RAN. Para ello, se incorporó una integración entre ns-3 y agentes externos desarrollados en Python, utilizando gRPC como mecanismo de comunicación.
 
 En términos generales, el flujo implementado permite que ORAN-NS3 genere observaciones del estado de la red, las envíe a un servidor Python, reciba una acción calculada por el agente y aplique dicha acción durante la simulación.
 
