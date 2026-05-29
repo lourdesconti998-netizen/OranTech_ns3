@@ -1,5 +1,6 @@
 # Ejecución de algoritmos RL en ORAN-NS3
-
+## Ejecución de escenarios con aprendizaje por refuerzo
+En esta sección se indican los pasos para ejecutar los escenarios de aprendizaje por refuerzo desarrollados en ORAN-NS3, considerando las dos técnicas implementadas: Q-Learning y DQN.
 ## Iniciar servidor Q-Learning
 
 En una nueva terminal:
