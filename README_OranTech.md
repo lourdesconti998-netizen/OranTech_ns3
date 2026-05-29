@@ -130,3 +130,5 @@ Instalar dependencias:
 ```bash
 pip install -r requirements.txt
 ```
+
+Nota: Se utilizaron herramientas de inteligencia artificial como apoyo en procesos puntuales de instalación y depuración.
