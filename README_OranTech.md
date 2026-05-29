@@ -12,7 +12,7 @@ Las modificaciones principales incluyen:
 - implementación de servidores Python para los agentes de aprendizaje por refuerzo;
 - comunicación entre ns-3 y Python mediante gRPC;
 - adaptación de scheduler RR OFDMA de ORAN-NS3 para utilizar las acciones generadas por el agente.
-- adaptación de los archivos orginales de ns3-ORAN a la utilización del módulo NR-LENA 
+- adaptación de los archivos orginales de ORAN-NS3 a la utilización del módulo NR-LENA 
   
 ## Ejecución de escenarios con aprendizaje por refuerzo
 En esta sección se indican los pasos para ejecutar los escenarios de aprendizaje por refuerzo desarrollados en ORAN-NS3, considerando las dos técnicas implementadas: Q-Learning y DQN.
